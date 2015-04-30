@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  KingorQueen
+//  KingforaDay
 //
-//  Created by Tris Earl on 02/03/2015.
+//  Created by Tristan Earl on 02/03/2015.
 //  Copyright (c) 2015 Tristan Earl. All rights reserved.
 //
 

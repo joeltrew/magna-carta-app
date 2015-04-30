@@ -8,6 +8,14 @@
 
 import UIKit
 
-class Questions: NSObject {
-   
+
+class Question: NSObject {
+    
+    var questionText: String
+    var answers: [Answer]
+    
+    init(questionText: String, answers: [Answer]) {
+        self.questionText = questionText
+        self.answers = answers
+    }
 }
