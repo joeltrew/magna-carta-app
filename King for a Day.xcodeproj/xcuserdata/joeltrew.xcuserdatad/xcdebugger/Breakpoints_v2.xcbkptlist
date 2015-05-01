@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KingorQueen/ViewController.swift"
-            timestampString = "452095056.489635"
+            timestampString = "452132158.27262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KingorQueen/AnswersService.swift"
-            timestampString = "452127930.510552"
+            timestampString = "452132158.27262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "loadAnswers()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,13 +42,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KingorQueen/AnswersService.swift"
-            timestampString = "452128138.259279"
+            timestampString = "452132158.27262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "loadAnswers()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KingorQueen/ViewController.swift"
+            timestampString = "452132158.27262"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.ViewController.player.getter : King_for_a_Day.Player"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/ViewController.swift"
+                  timestampString = "452129921.708099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.ViewController.player.setter : King_for_a_Day.Player"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/ViewController.swift"
+                  timestampString = "452129921.708253"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.ViewController.init (King_for_a_Day.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; King_for_a_Day.ViewController"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/ViewController.swift"
+                  timestampString = "452129921.708364"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "370">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.ViewController.player.materializeForSet : King_for_a_Day.Player"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/ViewController.swift"
+                  timestampString = "452129921.70847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
