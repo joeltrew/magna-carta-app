@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KingorQueen/ViewController.swift"
-            timestampString = "452132158.27262"
+            timestampString = "452456919.337709"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -127,6 +127,100 @@
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KingorQueen/Player.swift"
+            timestampString = "452455199.939823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "Player"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.Player.morality.getter : Swift.Int"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/Player.swift"
+                  timestampString = "452454977.28966"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.Player.morality.setter : Swift.Int"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/Player.swift"
+                  timestampString = "452454977.289805"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.Player.init (King_for_a_Day.Player.Type)(name : Swift.String, gender : King_for_a_Day.Gender) -&gt; King_for_a_Day.Player"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/Player.swift"
+                  timestampString = "452454977.289903"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_for_a_Day.Player.morality.materializeForSet : Swift.Int"
+                  moduleName = "King for a Day"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joeltrew/Documents/apps/KingorQueen%202/KingorQueen/Player.swift"
+                  timestampString = "452454977.289992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KingorQueen/ViewController.swift"
+            timestampString = "452456078.771305"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init(coder:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

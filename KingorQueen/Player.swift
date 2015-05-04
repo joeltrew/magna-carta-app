@@ -44,6 +44,7 @@ class Player: NSObject {
     }
     
     func printPlayerScores(){
-        println("Player Str =\(self.strength)","Player Morals= \(self.morality)","Player Humour= \(self.humour)","Player Modern= \(self.modern)")
+        var coolPlayerName = coolName()
+        println("\(coolPlayerName) Str =\(self.strength)","\(coolPlayerName) Morals= \(self.morality)","\(coolPlayerName) Humour= \(self.humour)","\(coolPlayerName) Modern= \(self.modern)")
     }
 }

@@ -4,6 +4,53 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
+        <!--Start Game View Controller-->
+        <scene sceneID="uyC-gC-XDZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBY-eV-oNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="w1C-r9-FTN" customClass="StartGameViewController" customModule="King_for_a_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="COJ-vS-67y"/>
+                        <viewControllerLayoutGuide type="bottom" id="4bs-DQ-exT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vi1-9Q-kxV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xg1-q3-1hS">
+                                <rect key="frame" x="184" y="241" width="221" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y97-0u-eir">
+                                <rect key="frame" x="233" y="184" width="117" height="29"/>
+                                <segments>
+                                    <segment title="Male"/>
+                                    <segment title="Female"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4l-U5-gRO">
+                                <rect key="frame" x="271" y="301" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startQuizButton:" destination="w1C-r9-FTN" eventType="touchUpInside" id="gQg-Fp-eUh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YrW-OT-aO9"/>
+                    <connections>
+                        <outlet property="genderControl" destination="y97-0u-eir" id="0uy-Km-Ei8"/>
+                        <outlet property="playerTextInput" destination="xg1-q3-1hS" id="8ux-jg-xAr"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="quizStarted" id="QcI-9Y-Lff"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="932" y="-336"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -79,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100.5" y="321.5"/>
+            <point key="canvasLocation" x="1508.5" y="-200.5"/>
         </scene>
         <!--End Game View Controller-->
         <scene sceneID="8nh-CA-OFp">
@@ -105,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OM2-Jf-9td" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="300"/>
+            <point key="canvasLocation" x="2035.5" y="-98.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pzc-cT-4fF">
@@ -118,12 +165,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="JN9-Yo-9z6"/>
+                        <segue destination="w1C-r9-FTN" kind="relationship" relationship="rootViewController" id="lN8-ez-XgU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFG-5M-NCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="321"/>
+            <point key="canvasLocation" x="156" y="147"/>
         </scene>
     </scenes>
 </document>

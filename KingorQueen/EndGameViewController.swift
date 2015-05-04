@@ -10,6 +10,9 @@ import UIKit
 import Foundation
 
 class EndGameViewController: UIViewController {
-    
+  
+    override func viewDidLoad() {
+        println("hi friend")
+    }
     
 }

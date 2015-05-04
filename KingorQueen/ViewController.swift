@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // variables
+    // variables ////////////////////////
     @IBOutlet weak var questionlabel: UILabel!
     
     //buttons
@@ -19,7 +19,11 @@ class ViewController: UIViewController {
     
     
     //init player
-    var player = Player(name: "Dan", gender: .Male)
+    var passedPlayerName:String!
+    var passedPlayerGender:Bool!
+    var player:Player?
+    
+    
     //
     
     //json variables
@@ -38,20 +42,29 @@ class ViewController: UIViewController {
         //adds answer scores to player scores and prints
         
         let answer = currentQuestion.answers[buttonIndex]
-        player.strength += currentQuestion.answers[buttonIndex].answerStrength
-        player.morality += currentQuestion.answers[buttonIndex].answerMorality
-        player.humour += currentQuestion.answers[buttonIndex].answerHumour
-        player.modern += currentQuestion.answers[buttonIndex].answerModern
-        player.printPlayerScores()
+        player!.strength += currentQuestion.answers[buttonIndex].answerStrength
+        player!.morality += currentQuestion.answers[buttonIndex].answerMorality
+        player!.humour += currentQuestion.answers[buttonIndex].answerHumour
+        player!.modern += currentQuestion.answers[buttonIndex].answerModern
+        player!.printPlayerScores()
     }
     
-    
+    func createPlayerObject() {
+        if passedPlayerGender == true{
+            player = Player(name: passedPlayerName,
+                            gender: .Male)
+        }else {
+            player = Player(name: passedPlayerName,
+                            gender: .Female)
+        }
+        
+    }
     
     
     func finalScorePrint() {
         
         println("\n----FINAL SCORES----\n")
-        player.printPlayerScores()
+        player!.printPlayerScores()
     }
     
     
@@ -67,10 +80,7 @@ class ViewController: UIViewController {
             performSegueWithIdentifier("quizFinished", sender: nil)
             // do something else here which removes the buttons
         }else {
-            
-            
             // Which button was tapped
-            
             addScoreToPlayer(buttonIndex)
             
             //Checks to make sure questions array does not get out of range
@@ -91,10 +101,13 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(animated: Bool) {
+        createPlayerObject()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         answersService = AnswersService(answersDataPath: answersDataPath)
         answersService.delegate = self
         answersService.loadAnswers()
@@ -118,7 +131,7 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
+        
     }
     
     
