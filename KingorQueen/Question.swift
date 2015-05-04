@@ -17,5 +17,6 @@ class Question: NSObject {
     init(questionText: String, answers: [Answer]) {
         self.questionText = questionText
         self.answers = answers
+
     }
 }

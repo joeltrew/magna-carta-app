@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         if currentQuestionIndex == (lastQuestion){
             addScoreToPlayer(buttonIndex)
             finalScorePrint()
-            
+            performSegueWithIdentifier("quizFinished", sender: nil)
             // do something else here which removes the buttons
         }else {
             
@@ -117,6 +117,9 @@ class ViewController: UIViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+    }
     
     
     override func didReceiveMemoryWarning() {

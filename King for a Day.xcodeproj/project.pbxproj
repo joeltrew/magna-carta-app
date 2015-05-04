@@ -17,6 +17,7 @@
 		6AC952671AB338C300CAF074 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC952661AB338C300CAF074 /* Player.swift */; };
 		6AC952691AB3394F00CAF074 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC952681AB3394F00CAF074 /* Answer.swift */; };
 		FF0B95FA1AC02F630056CD3F /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0B95F91AC02F630056CD3F /* Questions.plist */; };
+		FF38090B1AF3968A009DE147 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38090A1AF3968A009DE147 /* EndGameViewController.swift */; };
 		FFD30D501AF262FB0016BEAF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD30D4F1AF262FB0016BEAF /* SwiftyJSON.swift */; };
 		FFFF1D4D1AF13BC30091B4D7 /* AnswersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1D4C1AF13BC30091B4D7 /* AnswersService.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		6AC952661AB338C300CAF074 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		6AC952681AB3394F00CAF074 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		FF0B95F91AC02F630056CD3F /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
+		FF38090A1AF3968A009DE147 /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		FFD30D4F1AF262FB0016BEAF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		FFFF1D4C1AF13BC30091B4D7 /* AnswersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 			children = (
 				6A73F26C1AA4BF9C0024911A /* AppDelegate.swift */,
 				6A73F26E1AA4BF9C0024911A /* ViewController.swift */,
+				FF38090A1AF3968A009DE147 /* EndGameViewController.swift */,
 				FFFF1D4C1AF13BC30091B4D7 /* AnswersService.swift */,
 				6AC952661AB338C300CAF074 /* Player.swift */,
 				6AC952681AB3394F00CAF074 /* Answer.swift */,
@@ -238,6 +241,7 @@
 				6A73F26F1AA4BF9C0024911A /* ViewController.swift in Sources */,
 				6A73F26D1AA4BF9C0024911A /* AppDelegate.swift in Sources */,
 				FFD30D501AF262FB0016BEAF /* SwiftyJSON.swift in Sources */,
+				FF38090B1AF3968A009DE147 /* EndGameViewController.swift in Sources */,
 				FFFF1D4D1AF13BC30091B4D7 /* AnswersService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
