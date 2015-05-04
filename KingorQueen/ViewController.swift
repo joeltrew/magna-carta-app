@@ -75,8 +75,8 @@ class ViewController: UIViewController {
         
         
         if currentQuestionIndex == (lastQuestion){
+            //If final question do...
             addScoreToPlayer(buttonIndex)
-            finalScorePrint()
             performSegueWithIdentifier("quizFinished", sender: nil)
             // do something else here which removes the buttons
         }else {
@@ -131,7 +131,12 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        if segue.identifier == "quizFinished" {
+            var seg = segue.destinationViewController as! EndGameViewController
+            seg.passedPlayer = player
+            
+        }
+
     }
     
     

@@ -10,9 +10,15 @@ import UIKit
 import Foundation
 
 class EndGameViewController: UIViewController {
+    
+    @IBOutlet weak var royalNameLabel: UILabel!
+     var passedPlayer:Player?
   
     override func viewDidLoad() {
-        println("hi friend")
+        let royalName = passedPlayer?.coolName()
+        royalNameLabel.text = royalName
+        passedPlayer?.printPlayerScores()
+       
     }
     
 }
