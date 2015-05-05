@@ -14,24 +14,24 @@
                         <viewControllerLayoutGuide type="bottom" id="4bs-DQ-exT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vi1-9Q-kxV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xg1-q3-1hS">
-                                <rect key="frame" x="184" y="241" width="221" height="30"/>
+                                <rect key="frame" x="96" y="156" width="221" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y97-0u-eir">
-                                <rect key="frame" x="233" y="184" width="117" height="29"/>
+                                <rect key="frame" x="141" y="100" width="117" height="29"/>
                                 <segments>
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4l-U5-gRO">
-                                <rect key="frame" x="271" y="301" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="164" y="215" width="69" height="30"/>
+                                <state key="normal" title="Start Quiz">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -42,6 +42,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YrW-OT-aO9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="genderControl" destination="y97-0u-eir" id="0uy-Km-Ei8"/>
                         <outlet property="playerTextInput" destination="xg1-q3-1hS" id="8ux-jg-xAr"/>
