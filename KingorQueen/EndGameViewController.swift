@@ -11,6 +11,7 @@ import Foundation
 
 class EndGameViewController: UIViewController {
     
+    @IBOutlet weak var sealImageView: UIImageView!
     @IBOutlet weak var royalNameLabel: UILabel!
     var passedPlayer:Player?
     
@@ -18,16 +19,18 @@ class EndGameViewController: UIViewController {
         let royalName = passedPlayer?.coolName()
         
         passedPlayer?.printPlayerScores()
-        let nameEnd = workOutName(passedPlayer!)
+        let nameEnd = workOutName(passedPlayer!).endName
+        let seal = workOutName(passedPlayer!).sealImage
         let nameStart = passedPlayer?.name
         
         let fullRoyalName = nameStart! + " " + nameEnd
-        royalNameLabel.text = fullRoyalName
+        self.royalNameLabel.text = fullRoyalName
+        self.sealImageView.image = seal
         
     }
     
     
-    func workOutName(player: Player) -> String {
+    func workOutName(player: Player) -> (endName:String, sealImage:UIImage) {
         
         let playerScores = (player.strength,player.morality,player.humour,player.modern)
         
@@ -37,17 +40,21 @@ class EndGameViewController: UIViewController {
             //and the morality is between -100 and -30, and the hunour is between 10 and 80,
             // and the modern is between -80 and -60 
             // then it will print the line below
-            return "the Mad"
+            
+            return ("the Mad", UIImage(named: "seal2")!)
         case (100 ... 170, -100 ... -30 ,_,_):
             //in this case if the player strength is between 100 and 170, and the morality is between -100 and -30 then it will print the line below without any humour or modern values having to be checked
-            return "the Evil"
+           
+            return ("the Evil", UIImage(named: "seal3")!)
             //in this case if the players strength is the only thing checked
         case (100...170,_,_,_):
-            return "the Crazy"
+        
+            return ("the Crazy", UIImage(named: "seal4")!)
             
         default:
             //this is the default case in which if nothing is matched then the next line is printed
-           return "the Boreing"
+
+            return ("the Boreing", UIImage(named: "seal5")!)
         }
     }
 }
