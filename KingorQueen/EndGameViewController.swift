@@ -16,12 +16,12 @@ class EndGameViewController: UIViewController {
     var passedPlayer:Player?
     
     override func viewDidLoad() {
-        let royalName = passedPlayer?.coolName()
-        
         passedPlayer?.printPlayerScores()
+        
+        let royalName = passedPlayer?.coolName()
         let nameEnd = workOutName(passedPlayer!).endName
         let seal = workOutName(passedPlayer!).sealImage
-        let nameStart = passedPlayer?.name
+        let nameStart = royalName
         
         let fullRoyalName = nameStart! + " " + nameEnd
         self.royalNameLabel.text = fullRoyalName
@@ -54,7 +54,7 @@ class EndGameViewController: UIViewController {
         default:
             //this is the default case in which if nothing is matched then the next line is printed
 
-            return ("the Boreing", UIImage(named: "seal5")!)
+            return ("the Joker", UIImage(named: "seal5")!)
         }
     }
 }

@@ -12,10 +12,13 @@ import UIKit
 class Question: NSObject {
     
     var questionText: String
+    var questionImage: UIImage
     var answers: [Answer]
     
-    init(questionText: String, answers: [Answer]) {
+    
+    init(questionText: String, questionImage:UIImage, answers: [Answer]) {
         self.questionText = questionText
+        self.questionImage = questionImage
         self.answers = answers
 
     }

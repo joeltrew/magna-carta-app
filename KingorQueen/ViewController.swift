@@ -4,6 +4,7 @@ class ViewController: UIViewController {
     
     // variables ////////////////////////
     @IBOutlet weak var questionlabel: UILabel!
+    @IBOutlet weak var questionImageView: UIImageView!
     
     //buttons
     @IBOutlet weak var button1: UIButton!
@@ -89,6 +90,7 @@ class ViewController: UIViewController {
                 currentQuestionIndex++
                 //sets question label to the current question text
                 questionlabel.text = questions[currentQuestionIndex].questionText
+                questionImageView.image = questions[currentQuestionIndex].questionImage
             }
             
             //Goes through each item in the button array
@@ -115,6 +117,8 @@ class ViewController: UIViewController {
         
         //sets question label to first question in question array
         questionlabel.text = questions[0].questionText
+        questionImageView.image = questions[0].questionImage
+
         
         
         for (index, item) in enumerate(self.buttonArray) {
@@ -151,7 +155,8 @@ class ViewController: UIViewController {
 
 extension ViewController: AnswersServiceDelegate {
     func didLoadQuestionsAndAnswers(questionsAndAnswers:[Question]){
-        
+        println(questionsAndAnswers[1].questionImage)
+        println(questionsAndAnswers[2].questionImage)
         questions = questionsAndAnswers
         //set the array of json downloaded questions to the empty 'questions' array which our app will use
         

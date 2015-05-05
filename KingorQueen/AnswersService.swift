@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 protocol AnswersServiceDelegate: class {
     func didLoadQuestionsAndAnswers(questionsAndAnswers: [Question])
@@ -59,9 +59,12 @@ class AnswersService: NSObject {
             }
             
             var questiontext = que["question"].string
+            var questionimage = que["questionImage"].string
+            println(questionimage)
             //get the question text variable from json data
-            
-            var question = Question(questionText: questiontext!, answers: answersArray)
+
+            var question = Question(questionText: questiontext!, questionImage:UIImage(named: questionimage!)! , answers: answersArray)
+           // var question = Question(questionText: questiontext!, questionImage: answers: answersArray)
             //initalise a new Question object with both the question text and the array of Answers we just made
             
             questionsArray.append(question)

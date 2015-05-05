@@ -105,8 +105,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oay-wP-YF3">
+                                <rect key="frame" x="67" y="90" width="240" height="171"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="questionText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hue-bG-rXf">
-                                <rect key="frame" x="16" y="63" width="343" height="62"/>
+                                <rect key="frame" x="16" y="20" width="343" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -121,6 +124,7 @@
                         <outlet property="button2" destination="IQn-1x-e5Z" id="fsk-O7-QtJ"/>
                         <outlet property="button3" destination="5za-oe-Yg3" id="HFl-Yz-tkP"/>
                         <outlet property="button4" destination="OLE-Rx-AWh" id="kC1-ci-jvE"/>
+                        <outlet property="questionImageView" destination="oay-wP-YF3" id="ZlF-yv-GeQ"/>
                         <outlet property="questionlabel" destination="hue-bG-rXf" id="Pwf-Nm-YxG"/>
                         <segue destination="YBM-B8-E0M" kind="show" identifier="quizFinished" id="jLY-ur-x90"/>
                     </connections>
