@@ -3,7 +3,7 @@
 //  KingorQueenTests
 //
 //  Created by Tris Earl on 02/03/2015.
-//  Copyright (c) 2015 Tristan Earl. All rights reserved.
+//  Copyright (c) 2015 Group 10. All rights reserved.
 //
 
 import UIKit

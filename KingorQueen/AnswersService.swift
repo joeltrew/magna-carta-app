@@ -3,7 +3,7 @@
 //  King for a Day
 //
 //  Created by Joel Trew on 29/04/2015.
-//  Copyright (c) 2015 Tristan Earl. All rights reserved.
+//  Copyright (c) 2015 Group 10. All rights reserved.
 //
 
 import Foundation

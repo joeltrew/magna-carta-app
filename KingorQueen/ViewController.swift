@@ -39,6 +39,17 @@ class ViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(animated: Bool) {
+        createPlayerObject()
+        questionImageView.clipsToBounds = true
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        questionImageView.layer.cornerRadius = questionImageView.bounds.width/2
+    }
+    
+    
     func addScoreToPlayer(buttonIndex:Int) {
         //adds answer scores to player scores and prints
         
@@ -78,6 +89,7 @@ class ViewController: UIViewController {
         if currentQuestionIndex == (lastQuestion){
             //If final question do...
             addScoreToPlayer(buttonIndex)
+            finalScorePrint()
             performSegueWithIdentifier("quizFinished", sender: nil)
             // do something else here which removes the buttons
         }else {
@@ -102,10 +114,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        createPlayerObject()
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  KingforaDay
 //
-//  Created by Tristan Earl on 02/03/2015.
-//  Copyright (c) 2015 Tristan Earl. All rights reserved.
+//  Created by Group 10 on 02/03/2015.
+//  Copyright (c) 2015 Group 10. All rights reserved.
 //
 
 import UIKit
@@ -16,8 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        var attr = NSDictionary(object: UIFont(name: "IowanOldStyle-Italic", size: 16.0)!, forKey: NSFontAttributeName)
+        UISegmentedControl.appearance().setTitleTextAttributes(attr as [NSObject : AnyObject], forState: .Normal)
         return true
+        
     }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -2,8 +2,8 @@
 //  Player.swift
 //  KingorQueen
 //
-//  Created by Tristan on 13/03/2015.
-//  Copyright (c) 2015 Tristan Earl. All rights reserved.
+//  Created by Tristan Earl and Joel Trew on 13/03/2015.
+//  Copyright (c) 2015 Group 10. All rights reserved.
 //
 
 import UIKit
