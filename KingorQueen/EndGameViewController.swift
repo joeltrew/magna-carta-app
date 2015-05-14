@@ -18,6 +18,7 @@ class EndGameViewController: UIViewController {
     @IBOutlet weak var royalNameLabel: UILabel!
     
     var passedPlayer:Player?
+    var fullRoyalName:String?
     
     override func viewDidLoad() {
         passedPlayer?.printPlayerScores()
@@ -31,6 +32,7 @@ class EndGameViewController: UIViewController {
         self.royalNameLabel.text = fullRoyalName
         println(fullRoyalName)
         self.sealImageView.image = seal
+        self.fullRoyalName = fullRoyalName
         
     }
     
@@ -41,13 +43,16 @@ class EndGameViewController: UIViewController {
             // 2
             var tweetSheet = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             // 3
-            tweetSheet.setInitialText(workOutName(passedPlayer!).endName)
+           
+            tweetSheet.setInitialText("I have been crowned \(fullRoyalName!). Find out your name with the Rule for a Day App")
+            
             tweetSheet.addImage(workOutName(passedPlayer!).sealImage)
             
             // 4
             self.presentViewController(tweetSheet, animated: true, completion: nil)
         } else {
             // 5
+            showAlert()
             println("error")
         }
     }
@@ -55,55 +60,45 @@ class EndGameViewController: UIViewController {
     func workOutName(player: Player) -> (endName:String, sealImage:UIImage) {
         
         let playerScores = (player.strength,player.morality,player.humour,player.modern)
-        let vlow = (0...199)
-        let low = (200...299)
-        let high = (300...499)
-        let vhigh = (500...1000)
+
+        let low = (0...299)
+        let high = (300...1000)
+
         
         
         switch playerScores{
        
-        case (vhigh,vhigh,vlow,vlow): return ("the Bloodthirsty", UIImage(named: "seal2")!)
-        case (vhigh,high,low,vlow): return ("the Cruel", UIImage(named: "seal2")!)
-        case (vhigh,high,vlow,low): return ("the Conquerer", UIImage(named: "seal2")!)
-        case (vhigh,low,high,vlow): return ("the Brave", UIImage(named: "seal2")!)
-        case (vhigh,low,vlow,high): return ("the Tank", UIImage(named: "seal2")!)
-        case (vhigh,vlow,vhigh,vlow): return ("the Devil", UIImage(named: "seal2")!)
-        case (vhigh,vlow,low,high): return ("the Kind", UIImage(named: "seal2")!)
-        case (vhigh,vlow,high,low): return ("the Strong", UIImage(named: "seal2")!)
-        case (vhigh,vlow,vlow,vhigh): return ("the Terminator", UIImage(named: "seal2")!)
-        case (high,vhigh,low,vlow): return ("the Executionar", UIImage(named: "seal2")!)
-        case (high,vhigh,vlow,low): return ("the Wicked", UIImage(named: "seal2")!)
-        case (high,high,low,low): return ("the Fearless", UIImage(named: "seal2")!)
-        case (high,low,high,low): return ("the Great", UIImage(named: "seal2")!)
-        case (high,vlow,vhigh,low): return ("the Tough", UIImage(named: "seal2")!)
-        case (high,low,low,high): return ("the Rich", UIImage(named: "seal2")!)
-        case (high,low,vlow,vhigh): return ("the Lionheart", UIImage(named: "seal2")!)
-        case (high,vlow,vhigh,low): return ("the Merry", UIImage(named: "seal2")!)
-        case (high,vlow,low,vhigh): return ("the Fair", UIImage(named: "seal2")!)
-        case (low,vhigh,high,vlow): return ("the Mad", UIImage(named: "seal2")!)
-        case (low,vhigh,vlow,high): return ("the Terrible", UIImage(named:  "seal2")!)
-        case (low,high,vhigh,vlow): return ("the Jester", UIImage(named: "seal2")!)
-        case (low,high,high,low): return ("the Joker", UIImage(named: "seal2")!)
-        case (low,high,vlow,vhigh): return ("the Peaceful", UIImage(named: "seal2")!)
-        case (low,low,high,high): return ("the Sloth", UIImage(named: "seal2")!)
-        case (low,high,low,high): return ("the Impaler", UIImage(named: "seal2")!)
-        case (low,vlow,high,vhigh): return ("the Diplomat", UIImage(named: "seal2")!)
-        case (low,vlow,vhigh,high): return ("the Good", UIImage(named: "seal2")!)
-        case (vlow,vhigh,vhigh,vlow): return ("the Vampire", UIImage(named: "seal2")!)
-        case (vlow,vhigh,high,low): return ("the Grim", UIImage(named: "seal2")!)
-        case (vlow,vhigh,low,high): return ("the Damned", UIImage(named: "seal2")!)
-        case (vlow,vhigh,vlow,vhigh): return ("the Bad", UIImage(named: "seal2")!)
-        case (vlow,high,vhigh,low): return ("the Dung Named:", UIImage(named: "seal2")!)
-        case (vlow,high,low,vhigh): return ("the Mad Scientist", UIImage(named: "seal2")!)
-        case (vlow,low,vhigh,high): return ("the Weak", UIImage(named: "seal2")!)
-        case (vlow,low,high,vhigh): return ("the Gentle", UIImage(named: "seal2")!)
-        case (vlow,vlow,vhigh,vhigh): return ("the Troll", UIImage(named: "seal2")!)
+            
+        case(high,high,low,low):return	("the Bloodthirsty", UIImage(named: "seal2")!)
+        case(high,low,high,low):return	("the Drunk", UIImage(named: "seal2")!)
+        case(high,low,low,high):return	("the Politician", UIImage(named: "seal2")!)
+        case(low,high,high,low):return	("the Mad", UIImage(named: "seal2")!)
+        case(low,high,low,high):return	("the Hacker", UIImage(named: "seal2")!)
+        case(low,low,high,high):return	("the Meme Maker", UIImage(named: "seal2")!)
+        case(high,low,low,low):return    ("the Great", UIImage(named: "seal2")!)
+        case(low,high,low,low):return    ("the Grim", UIImage(named: "seal2")!)
+        case(low,low,high,low):return    ("the Jester", UIImage(named: "seal2")!)
+        case(low,low,low,high):return	  ("the Futuristic", UIImage(named: "seal2")!)
+        case(high,high,high,low):return   ("the Taker of Heads", UIImage(named: "seal2")!)
+        case(high,low,high,high):return   ("the Gamer", UIImage(named: "seal2")!)
+        case(high,high,low,high):return   ("the Terminator", UIImage(named: "seal2")!)
+        case(low,high,high,high):return   ("the Keyboard Warrior", UIImage(named: "seal2")!)
             
         default:
             //this is the default case in which if nothing is matched then the next line is printed
             println("Error!!!!!!")
             return ("the Error", UIImage(named: "seal5")!)
         }
+    }
+    
+    @IBAction func showAlert() {
+        var alert : UIAlertView = UIAlertView(title: "No twitter account found", message: "Please add a Twitter account to your iDevice to use this service",       delegate: nil, cancelButtonTitle: "Ok")
+        
+        alert.show()
+    }
+
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }
