@@ -1,0 +1,349 @@
+{
+  "questions": [
+    {
+      "question": "The peasants are rebelling.\nWhat do you do?",
+      "questionImage": "question1",
+      "answers": [
+        {
+          "answerText": "Declare War",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Burn the Leaders at the Stake",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Post a Facebook Status",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Give them what they want",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        }
+      ]
+    },
+    {
+      "question": "You’ve run out of money.\nWhat do you do?",
+      "questionImage": "question2",
+      "answers": [
+        {
+          "answerText": "Tax the poor!",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Organise a Heist",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Get a second job",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+        {
+          "answerText": "Ransack a smaller country",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        }
+      ]
+    },
+    {
+      "question": "Choose your royal pet",
+      "questionImage": "question3",
+      "answers": [
+        {
+          "answerText": "The fearless LION",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "An adorable KITTEN wearing a hat",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        },
+        {
+          "answerText": "ROBOT DOG, your (t)rusty companion",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+        {
+          "answerText": "A gigantic rampaging firebreathing LIZARD",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        }
+      ]
+    },
+    {
+      "question": "You are being attacked.\nHow do you respond?",
+      "questionImage": "question4",
+      "answers": [
+        {
+          "answerText": "Hide!",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Send in the Peasants",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Troll them on Twitter",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+        {
+          "answerText": "Fight back",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        }
+      ]
+    },
+    {
+      "question": "Food is low.\nHow do you cope?",
+      "questionImage": "question5",
+      "answers": [
+        {
+          "answerText": "Take out a loan and buy some more",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+	{
+          "answerText": "You're not hungry so what's the problem?",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Pizza?",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        },
+	{
+          "answerText": "Share it between everyone",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        }
+	
+      ]
+    },
+    {
+      "question": "Your Royal Colours are…",
+      "questionImage": "question6",
+      "answers": [
+	{
+          "answerText": "Chrome",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+        {
+          "answerText": "Black and Red",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Blue and Gold",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Pink with Green Spots",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        }
+        
+      ]
+    },
+    {
+      "question": "Someone is stealing from you.\nWhat do you do?",
+      "questionImage": "question7",
+      "answers": [
+        {
+          "answerText": "Off with their head!",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+	{
+          "answerText": "Set an elaborate trap",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Challenge them to a Joust",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Hack their bank",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        }
+      ]
+    },
+    {
+      "question": "You’ve been wrongly accused of murder.\nHow do you clear your name?",
+      "questionImage": "question8",
+      "answers": [
+        {
+          "answerText": "Take to the streets to protest your innocence",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Wrongly accused?!",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "#Innocent",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+        {
+          "answerText": "Give everyone a puppy",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        }
+      ]
+    },
+    {
+      "question": "You just lost a war.\nHow do you tell your people?",
+      "questionImage": "question9",
+      "answers": [
+        {
+          "answerText": "Tell them you won",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Give an inspiring speech",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "Address the public on TV",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+        {
+          "answerText": "You don't lose wars",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+        }
+      ]
+    },
+    {
+      "question": "Pick your weapon.",
+      "questionImage": "question10",
+      "answers": [
+        
+        
+        {
+          "answerText": "Nunchucks",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 100
+        },
+	{
+          "answerText": "Sword",
+          "answerStrength": 100,
+          "answerMorality": 0,
+          "answerHumour": 0,
+          "answerModern": 0
+        },
+        {
+          "answerText": "A Rubber Chicken",
+          "answerStrength": 0,
+          "answerMorality": 0,
+          "answerHumour": 100,
+          "answerModern": 0
+	},
+	{
+          "answerText": "Blood soaked Dagger",
+          "answerStrength": 0,
+          "answerMorality": 100,
+          "answerHumour": 0,
+          "answerModern": 0
+        }
+        
+      ]
+    }
+  ]
+}

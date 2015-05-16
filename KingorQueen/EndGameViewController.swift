@@ -16,7 +16,7 @@ class EndGameViewController: UIViewController {
    
     @IBOutlet weak var sealImageView: UIImageView!
     @IBOutlet weak var royalNameLabel: UILabel!
-    
+    @IBOutlet weak var sealDescription: UILabel!
     var passedPlayer:Player?
     var fullRoyalName:String?
     
@@ -26,6 +26,7 @@ class EndGameViewController: UIViewController {
         let royalName = passedPlayer?.coolName()
         let nameEnd = workOutName(passedPlayer!).endName
         let seal = workOutName(passedPlayer!).sealImage
+        let sealText = workOutName(passedPlayer!).sealText
         let nameStart = royalName
         let fullRoyalName = nameStart! + " " + nameEnd
         
@@ -33,6 +34,7 @@ class EndGameViewController: UIViewController {
         println(fullRoyalName)
         self.sealImageView.image = seal
         self.fullRoyalName = fullRoyalName
+        self.sealDescription.text = "“" + sealText + "”"
         
     }
     
@@ -57,7 +59,7 @@ class EndGameViewController: UIViewController {
         }
     }
     
-    func workOutName(player: Player) -> (endName:String, sealImage:UIImage) {
+    func workOutName(player: Player) -> (endName:String, sealImage:UIImage, sealText:String) {
         
         let playerScores = (player.strength,player.morality,player.humour,player.modern)
 
@@ -67,27 +69,25 @@ class EndGameViewController: UIViewController {
         
         
         switch playerScores{
-       
-            
-        case(high,high,low,low):return	("the Bloodthirsty", UIImage(named: "seal2")!)
-        case(high,low,high,low):return	("the Drunk", UIImage(named: "seal2")!)
-        case(high,low,low,high):return	("the Politician", UIImage(named: "seal2")!)
-        case(low,high,high,low):return	("the Mad", UIImage(named: "seal2")!)
-        case(low,high,low,high):return	("the Hacker", UIImage(named: "seal2")!)
-        case(low,low,high,high):return	("the Meme Maker", UIImage(named: "seal2")!)
-        case(high,low,low,low):return    ("the Great", UIImage(named: "seal2")!)
-        case(low,high,low,low):return    ("the Grim", UIImage(named: "seal2")!)
-        case(low,low,high,low):return    ("the Jester", UIImage(named: "seal2")!)
-        case(low,low,low,high):return	  ("the Futuristic", UIImage(named: "seal2")!)
-        case(high,high,high,low):return   ("the Taker of Heads", UIImage(named: "seal2")!)
-        case(high,low,high,high):return   ("the Gamer", UIImage(named: "seal2")!)
-        case(high,high,low,high):return   ("the Terminator", UIImage(named: "seal2")!)
-        case(low,high,high,high):return   ("the Keyboard Warrior", UIImage(named: "seal2")!)
+        case(high,high,low,low):return	("the Bloodthirsty", UIImage(named: "Seal_The_Bloodthirsty")!, "They threaten the innocent who spare the guilty")
+        case(high,low,high,low):return	("the Drunk", UIImage(named: "Seal_The_Drunk")!, "In wine there is truth")
+        case(high,low,low,high):return	("the Politician", UIImage(named: "Seal_The_Politician")!, "Where there is unity, there is victory")
+        case(low,high,high,low):return	("the Mad", UIImage(named: "Seal_The_Mad")!, "If madness comes, death will follow")
+        case(low,high,low,high):return	("the Hacker", UIImage(named: "Seal_The_Hacker")!, "I am the Lord of Computers")
+        case(low,low,high,high):return	("the Meme Maker", UIImage(named: "Seal_The_Meme_Maker")!, "I am the Creator of Memes")
+        case(high,low,low,low):return    ("the Great", UIImage(named: "Seal_The_Great")!, "The important thing isn't how long you live, but how well you live")
+        case(low,high,low,low):return    ("the Grim", UIImage(named: "Seal_The_Grim")!, "Either kill or be killed")
+        case(low,low,high,low):return    ("the Jester", UIImage(named: "Seal_The_Jester")!, "I am the Lord of Comedy")
+        case(low,low,low,high):return	  ("the Futurist", UIImage(named: "Seal_The_Futuristic")!, "Technology is the road to success")
+        case(high,high,high,low):return   ("the Taker of Heads", UIImage(named: "Seal_The_Taker_Of_Heads")!, "A life of shame leaves no room even for an honorable death")
+        case(high,low,high,high):return   ("the Gamer", UIImage(named: "Seal_The_Gamer")!, "Work hard, play harder")
+        case(high,high,low,high):return   ("the Terminator", UIImage(named: "Seal_The_Terminator")!, "All fall before my powers of robotics")
+        case(low,high,high,high):return   ("the Keyboard Warrior", UIImage(named: "Seal_The_Keyboard_Warrior")!, "I came, I saw, and I have the power of the Internet")
             
         default:
             //this is the default case in which if nothing is matched then the next line is printed
             println("Error!!!!!!")
-            return ("the Error", UIImage(named: "seal5")!)
+            return ("the Nothing Special", UIImage(named: "Seal_The_Jester")!,"Eek I think something went wrong!")
         }
     }
     

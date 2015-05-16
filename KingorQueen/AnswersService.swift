@@ -29,8 +29,14 @@ class AnswersService: NSObject {
         //load json url
         let url = NSURL(string:answersDataPath)!
         let request = NSURLRequest(URL: url)
-        let data = NSData(contentsOfURL: url)
+        var data = NSData(contentsOfURL: url)
         //init json with url data
+        if data == nil{
+            println("Using local json file")
+            let bundle = NSBundle.mainBundle()
+            let path = bundle.pathForResource("kfadAnswers1", ofType: "json")
+            data = NSData(contentsOfFile: path!)
+        }
         let json:JSON = JSON(data:data!)
 
         var questionsArray = [Question]()

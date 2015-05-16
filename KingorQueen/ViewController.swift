@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     //
     
     //json variables
-    let answersDataPath = "http://joeltrew.com/kfadAnswers.json"
+    let answersDataPath = "http://joeltrew.com/kfadAnswers1.json"
     var answersService: AnswersService!
     //
     
@@ -56,8 +56,8 @@ class ViewController: UIViewController {
         let answer = currentQuestion.answers[buttonIndex]
         player!.strength += currentQuestion.answers[buttonIndex].answerStrength
         player!.morality += currentQuestion.answers[buttonIndex].answerMorality
-        player!.humour += currentQuestion.answers[buttonIndex].answerHumour
-        player!.modern += currentQuestion.answers[buttonIndex].answerModern
+        player!.humour   += currentQuestion.answers[buttonIndex].answerHumour
+        player!.modern   += currentQuestion.answers[buttonIndex].answerModern
         player!.printPlayerScores()
     }
     

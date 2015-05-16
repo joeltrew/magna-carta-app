@@ -18,6 +18,7 @@
 		6AC952691AB3394F00CAF074 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC952681AB3394F00CAF074 /* Answer.swift */; };
 		FF07B3561B04C76000015853 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07B3551B04C76000015853 /* EndGameViewController.swift */; };
 		FF0B95FA1AC02F630056CD3F /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF0B95F91AC02F630056CD3F /* Questions.plist */; };
+		FF7F1B781B07E8DE009CF44C /* kfadAnswers1.json in Resources */ = {isa = PBXBuildFile; fileRef = FF7F1B771B07E8DE009CF44C /* kfadAnswers1.json */; };
 		FFA7F8F91AF7DCD200C79EAF /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7F8F81AF7DCD200C79EAF /* StartGameViewController.swift */; };
 		FFD30D501AF262FB0016BEAF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD30D4F1AF262FB0016BEAF /* SwiftyJSON.swift */; };
 		FFFF1D4D1AF13BC30091B4D7 /* AnswersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF1D4C1AF13BC30091B4D7 /* AnswersService.swift */; };
@@ -49,6 +50,7 @@
 		6AC952681AB3394F00CAF074 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		FF07B3551B04C76000015853 /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		FF0B95F91AC02F630056CD3F /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
+		FF7F1B771B07E8DE009CF44C /* kfadAnswers1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kfadAnswers1.json; sourceTree = "<group>"; };
 		FFA7F8F81AF7DCD200C79EAF /* StartGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		FFD30D4F1AF262FB0016BEAF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		FFFF1D4C1AF13BC30091B4D7 /* AnswersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswersService.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				6AC952661AB338C300CAF074 /* Player.swift */,
 				6AC952681AB3394F00CAF074 /* Answer.swift */,
 				FFD30D4F1AF262FB0016BEAF /* SwiftyJSON.swift */,
+				FF7F1B771B07E8DE009CF44C /* kfadAnswers1.json */,
 				6AC952641AB32A3E00CAF074 /* Question.swift */,
 				6A73F2701AA4BF9C0024911A /* Main.storyboard */,
 				FFA7F8F81AF7DCD200C79EAF /* StartGameViewController.swift */,
@@ -217,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7F1B781B07E8DE009CF44C /* kfadAnswers1.json in Resources */,
 				FF0B95FA1AC02F630056CD3F /* Questions.plist in Resources */,
 				6A73F2721AA4BF9C0024911A /* Main.storyboard in Resources */,
 				6A73F2771AA4BF9C0024911A /* LaunchScreen.xib in Resources */,

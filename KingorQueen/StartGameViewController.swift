@@ -15,10 +15,10 @@ class StartGameViewController: UIViewController {
     @IBOutlet weak var playerTextInput: UITextField!
     @IBOutlet weak var genderControl: UISegmentedControl!
     var theView = UIView?(), labelHeading = UILabel(), label = UILabel(), labelGoodLuck = UILabel(),
-labelTouchToContinue = UILabel()
+    labelTouchToContinue = UILabel()
     
-
-
+    
+    
     override func viewWillAppear(animated: Bool) {
         imageView.clipsToBounds = true
         theView = UIView(frame: CGRectMake(0, 0, 0,0))
@@ -31,7 +31,8 @@ labelTouchToContinue = UILabel()
         labelTouchToContinue.font = UIFont(name: "IowanOldStyle-Bold", size: 20)
         labelHeading.font = UIFont(name: "IowanOldStyle-Bold", size: 28)
         label.numberOfLines = 0
-        labelHeading.numberOfLines = 0
+        labelHeading.numberOfLines = 1
+        labelHeading.adjustsFontSizeToFitWidth = true
         
         labelGoodLuck.textAlignment = NSTextAlignment.Center
         labelHeading.textAlignment = NSTextAlignment.Center
@@ -44,7 +45,7 @@ labelTouchToContinue = UILabel()
         labelGoodLuck.alpha = 1
         labelTouchToContinue.textColor = UIColor.whiteColor()
         labelTouchToContinue.alpha = 1
-
+        
         labelHeading.textColor = UIColor.whiteColor()
         labelHeading.alpha = 1
         //note here were calling addSubview on theView not just self.view as above.
@@ -53,7 +54,7 @@ labelTouchToContinue = UILabel()
         theView?.addSubview(labelGoodLuck)
         theView?.addSubview(labelTouchToContinue)
         
-
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -63,28 +64,37 @@ labelTouchToContinue = UILabel()
     
     @IBAction func startQuizButton(sender: AnyObject) {
         if playerTextInput.text.isEmpty {
-            showAlertEmpty()
+            showAlert("Please enter a name", message: "Please enter a name in the input box")
             playerTextInput.backgroundColor = UIColor(red: 200, green: 25, blue: 0, alpha: 100)
         }else{
             if count(playerTextInput.text) > 11 {
-                showAlertTooLong()
+                showAlert("Name too long", message: "Please chose a shorter name")
             }
             else{
-                self.labelHeading.text = "Welcome \(playerTextInput.text)"
-                self.label.text = "Your kingdom needs you to make difficult decisions. Find out how you will be remembered."
-                self.labelGoodLuck.text = "Good Luck..."
-                self.labelTouchToContinue.text = "Touch anywhere to continue"
-                self.theView!.frame = CGRectMake(0, 0,  view.bounds.width, view.bounds.height)
-                labelHeading.frame = CGRectMake(10, 50, theView!.bounds.width-30 ,200)
-                label.frame = CGRectMake(20, 130,theView!.bounds.width-30 ,200)
-                labelGoodLuck.frame = CGRectMake(10, 210,theView!.bounds.width-30 ,200)
-                labelTouchToContinue.frame = CGRectMake(10, theView!.bounds.height-40, theView!.bounds.width-30, 20)
-        
+            
+                let regex = NSRegularExpression(pattern: "^[A-Z]*$", options: NSRegularExpressionOptions.CaseInsensitive, error: nil)!
+                let matches = !regex.matchesInString(playerTextInput.text, options: nil, range: NSMakeRange(0, count(playerTextInput.text))).isEmpty
+                
+                if !matches {
+                    showAlert("Letters only", message: "Please only use letters")
+                }
+                else {
+            
+                    self.labelHeading.text = "Welcome \(playerTextInput.text)"
+                    self.label.text = "Your kingdom needs you to make difficult decisions. Find out how you will be remembered."
+                    self.labelGoodLuck.text = "Good Luck..."
+                    self.labelTouchToContinue.text = "Touch anywhere to continue"
+                    self.theView!.frame = CGRectMake(0, 0,  view.bounds.width, view.bounds.height)
+                    labelHeading.frame = CGRectMake(10, 50, theView!.bounds.width-30 ,200)
+                    label.frame = CGRectMake(20, 130,theView!.bounds.width-30 ,200)
+                    labelGoodLuck.frame = CGRectMake(10, 210,theView!.bounds.width-30 ,200)
+                    labelTouchToContinue.frame = CGRectMake(10, theView!.bounds.height-40, theView!.bounds.width-30, 20)
+                }
             }
         }
     }
     
-
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "quizStarted" {
@@ -101,18 +111,11 @@ labelTouchToContinue = UILabel()
     }
     
     
-    @IBAction func showAlertTooLong() {
-        var alert : UIAlertView = UIAlertView(title: "Name too long", message: "Please chose a shorter name",       delegate: nil, cancelButtonTitle: "Ok")
+    func showAlert(title: String, message: String) {
+        var alert : UIAlertView = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "Ok")
         
         alert.show()
     }
-    
-    @IBAction func showAlertEmpty() {
-        var alert : UIAlertView = UIAlertView(title: "Please enter a name", message: "Please enter a name in the input box",       delegate: nil, cancelButtonTitle: "Ok")
-        
-        alert.show()
-    }
-    
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         if let touch = touches.first as? UITouch {
