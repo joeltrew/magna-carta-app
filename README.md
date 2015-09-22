@@ -17,7 +17,7 @@ Decision based quiz app where you are prompted to enter your name and gender, yo
 
 |                                     |                                                            |
 |-------------------------------------|------------------------------------------------------------|
-|Production Blog Link                 | **[http://46.101.61.120/](http://46.101.61.120/)**            
+|Production Blog Link                 |            
       
 
 ## Developer Notes
